@@ -1,1 +1,53 @@
+*{
+    font-family: arima madurai;
+}
 
+/* h1{
+    font-size: 45px;
+    text-align: left;
+    border:rgb(235, 183, 88) solid 10px;
+    background-color: palegoldenrod;
+    
+} */
+
+div#message1{
+    background-color: rgb(113, 172, 113);
+    font-size: 20px;
+    height: 50px;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+div.showme{
+    display: block;
+}
+
+div.hideme{
+    display:none;
+}
+
+
+
+.jumbotron-fluid{
+    background-image: url(images/CBD-for-Dogs-CBD-Oil-for-dogs.png);
+    background-size: contain;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    text-align: right;
+}
+
+body{
+    background-image: url(images/pawprints.jpg);
+    background-position: contain;
+}
+
+.puppycalc {
+    background-color: whitesmoke;
+    border:rgb(113, 172, 113) solid 5px;
+}
+
+.dosage{
+    background-color: whitesmoke;
+    border:rgb(113, 172, 113) solid 5px;
+}
