@@ -26,6 +26,16 @@ div.hideme{
     display:none;
 }
 
+.weeddog{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.cbddog{
+    border:rgb(113, 172, 113) solid 5px;
+}
 
 
 .jumbotron-fluid{
