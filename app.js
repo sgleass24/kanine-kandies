@@ -76,6 +76,87 @@ function calculateDogAge(){
 }
 calculateDogAge();
 
+//dosage
+var smDog ={
+  starting: "3mg",
+  medium: "6mg",
+  higher: "9mg",
+  
+}
+function getDosage(){
+  var place =document.getElementById("btnsm");
+  
+ 
+
+
+for (value in smDog){
+  place.innerHTML = "Starting: " + smDog.starting + '<br>' +
+  "Medium: " + smDog.medium + "<br>" +
+  "Higher: " + smDog.higher + "<br>" ;
+
+}
+};
+
+function clear1(){
+  var close = "";
+  document.getElementById("btnsm").innerHTML = close;
+  
+};
+
+var mdDog ={
+  starting: "5mg",
+  medium: "10mg",
+  higher: "15mg",
+  
+}
+function getDosage2(){
+  var place =document.getElementById("btnmd");
+  
+ 
+
+
+for (value in mdDog){
+  place.innerHTML = "Starting: " + mdDog.starting + '<br>' +
+  "Medium: " + mdDog.medium + "<br>" +
+  "Higher: " + mdDog.higher + "<br>" ;
+
+}
+};
+
+function clear2(){
+  var close = "";
+  document.getElementById("btnmd").innerHTML = close;
+  
+};
+
+var lgDog ={
+  starting: "10mg",
+  medium: "20mg",
+  higher: "30mg",
+  
+}
+function getDosage3(){
+  var place =document.getElementById("btnlg");
+  
+ 
+
+
+for (value in lgDog){
+  place.innerHTML = "Starting: " + lgDog.starting + '<br>' +
+  "Medium: " + lgDog.medium + "<br>" +
+  "Higher: " + lgDog.higher + "<br>" ;
+
+}
+};
+
+function clear3(){
+  var close = "";
+  document.getElementById("btnlg").innerHTML = close;
+  
+};
+
+
+
 // function special(){
 // if(dayNumber ===1){
 // return '1/2 off all oils'
