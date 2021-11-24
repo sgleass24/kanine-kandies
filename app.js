@@ -37,7 +37,7 @@ switch (new Date().getDay()) {
       day = "Buy Two Edibles Get One Free";
   }
 document.getElementById("message1").innerHTML=(`Today is ${day}`);
-  console.log('Today is ' + getDay());
+console.log('Today is ' + (new Date().getDay()));
 
 //   function kandies(){
 //     const kandies=["Alleries",
@@ -61,11 +61,11 @@ counter=0;
 
 function setImage(){
   document.getElementById("carousel-image").src = arrayCarousel [counter];
-  document.getElementById("carousel-image1").src = arrayCarousel [counter];
+  // document.getElementById("carousel-image1").src = arrayCarousel [counter];
   
   counter = (counter + 1) % arrayCarousel.length;
 }
-setInterval (setImage, 2000);
+setInterval (setImage, 3000);
 
 // puppy calculator
 function calculateDogAge(){

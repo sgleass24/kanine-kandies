@@ -51,3 +51,9 @@ body{
     background-color: whitesmoke;
     border:rgb(113, 172, 113) solid 5px;
 }
+
+#carousel-image{
+    width: 500px;
+    height: 500px;
+}
+
