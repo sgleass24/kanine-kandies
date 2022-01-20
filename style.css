@@ -67,3 +67,15 @@ body{
     height: 500px;
 }
 
+.about
+    {
+        background-color: whitesmoke;
+        border:rgb(113, 172, 113) solid 5px;
+    }
+
+#breed_image{
+    max-height:  500px;
+    max-width:  5000px;
+}
+
+
