@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Noto+Serif+Display&display=swap"
+        rel="stylesheet">
+    <title>Kanine Form</title>
+</head>
+<body>
+    <a class="nav" href="index.html">Home</a>
+
+
+    <form name="contactForm" onsubmit="return validateForm()" action="" method="get">
+        <h2>Application Form</h2>
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <label>Email Address</label>
+            <input type="text" name="email" min="7" required>
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+            <label>Mobile Number</label>
+            <input type="text" name="mobile">
+            <div class="error" id="mobileErr"></div>
+        </div>
+        <div class="row">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Must be 8 Characters">
+            <div class="error" id="mobileErr"></div>
+        </div>
+       
+        <div class="row">
+            <label>Type of Dog</label>
+            <select name="type">
+                <option>Select</option>
+                <option>Small 5-35lb</option>
+                <option>Medium 35-75lb</option>
+                <option>Large 75+lb</option>
+            </select> 
+            <div class="error" id="typeErr"></div>
+        </div>
+        <div class="row">
+            <label>Addionial Info:</label>
+            <textarea type="text" name="doginfo" placeholder="Tell us about your Dogs Needs"></textarea>
+            <div class="error" id="dogErr"></div>
+        </div>
+              
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

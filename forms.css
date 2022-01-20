@@ -1,0 +1,16 @@
+*{
+    font-family: arima madurai;
+}
+body{
+    background-image: url(images/pawprints.jpg);
+    background-position: contain;
+}
+
+form {
+    max-width: 580px;
+    margin: 70px auto;
+    padding: 16px;
+    border: 3px solid #eaeaea;
+    background-color: white;
+  
+  }

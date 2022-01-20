@@ -224,7 +224,7 @@ function displayBreed(image) {
   var breed_data = image.breeds[0]
   $.each(breed_data, function(key, value) {
     // as 'weight' and 'height' are objects that contain 'metric' and 'imperial' properties, just use the metric string
-    if (key == 'weight' || key == 'height') value = value.metric
+    if (key == 'weight' || key == 'height') value = value.imperial
     // add a row to the table
     $("#breed_data_table").append("<tr><td>" + key + "</td><td>" + value + "</td></tr>");
   });
