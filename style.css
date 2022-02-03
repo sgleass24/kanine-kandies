@@ -10,6 +10,11 @@
     
 } */
 
+.nav a{
+    display: inline;
+    font-size: 15px;
+}
+
 div#message1{
     background-color: rgb(113, 172, 113);
     font-size: 20px;
@@ -76,6 +81,18 @@ body{
 #breed_image{
     max-height:  500px;
     max-width:  5000px;
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+
+}
+
+footer{
+    background-color: rgb(113, 172, 113);
+    position: sticky;
+    
 }
 
 

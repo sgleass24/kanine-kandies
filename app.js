@@ -253,6 +253,38 @@ function ajax_get(url, callback) {
 getBreeds();
 
 
+// order form starts
+function calcOrder(){
+  var orderForm = document.forms.orderForm;
+
+  // calculate initial cost
+  var mIndex = orderForm.elements.model.selectedIndex;
+  var mCost = orderForm.elements.model.options[mIndex].value;
+  var qIndex = orderForm.elements.qty.selectedIndex;
+  var qIndex = orderForm.elements.qty[qIndex].value;
+
+  // initial cost = model cost x quanity
+  var initalCost = mCost*quanity;
+  orderForms.elements.initalCost.value = formatUSCurrency(initialCost);
+
+  // retrieve cost of the users protection plan
+  var pCost = document.querySelector('input[name="protection"]:checked').value*quantity;
+  orderForm.elements.protectionCost.value = formatNumber(initalCost + pCost, 2);
+
+  // calculate order subtotal
+  orderForm.elements.subtotal.value = formatNumber (initalCost +pCost, 2);
+
+  // calculate sales tax
+  var salesTax = 0.05*(initalCost +pCost);
+  orderForm.elements.salesTax.value = formatNumber(salesTax,2);
+
+  // calculate the cost of the total order
+  var totalCost = initalCost + pCost + salesTax;
+  orderForm.elements.totalCost.value = formatUSCurrency(totalCost);
+
+}
+
+
 
 // const apiURL = "//random.dog/f856b11f-6d47-4089-9edf-aad8107161d0.jpg";
 // fetch(apiURL)
