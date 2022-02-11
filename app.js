@@ -257,15 +257,19 @@ getBreeds();
 
 
 
-// 4a60b34e0a424436bdbd659aaf5deab9 news key
-var url = 'https://newsapi.org/v2/top-headlines?' +
-          'country=us&' +
-          'apiKey=4a60b34e0a424436bdbd659aaf5deab9';
-var req = new Request(url);
-fetch(req)
-    .then(function(response) {
-        console.log(response.json());
-    })
+// fetch("http://open.mapquestapi.com/nominatim/v1/search.php"
+// .then(response => {
+// 	console.log(response);
+// })
+// .catch(err => {
+// 	console.error(err);
+// });
+
+fetch("api.json")
+.then((data) => data.json())
+.then((data) => {
+  console.log(data);
+});
 
 
 // // order form starts
